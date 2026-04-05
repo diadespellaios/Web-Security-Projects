@@ -1,0 +1,17 @@
+{
+  "name": "sop1",
+  "version": "1.0.0",
+  "description": "Same Origin Policy showcasing",
+  "license": "ISC",
+  "author": "Diades Pellaios",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
