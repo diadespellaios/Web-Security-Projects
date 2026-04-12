@@ -6,16 +6,12 @@ const PORT = location.port
 
 const getResult = async () => {
   const fetchRes = await fetch(`http://localhost:${PORT}/query?` + new URLSearchParams({search: `${source.value.trim()}`}).toString())
-
+  source.value = ''
+  
   const queryResult = await fetchRes.json()
 
-
-  sink.innerHTML = `Your results for "${source.value}":<br>`
-  for (let entry of queryResult) {
-    sink.innerHTML += `${entry.sentence}<br>`
-  }
+  sink.innerHTML = `${queryResult}`
   sink.style.display = "block"
-  source.value = ''
 }
 
 source.addEventListener("keypress", (e) => {
