@@ -14,13 +14,17 @@ server.use(cookieParser())
 server.get("/query", async (req, res) => {
   const query = req.query.search
 
-  const queryResult = await db.any(`
-      SELECT * FROM strings
-      WHERE sentence ILIKE '%${query}%';
-    `)
+  const queryResult = await db.any(
+    "SELECT sentence FROM strings WHERE sentence ILIKE $1",
+    [`%${query}%`]
+  )
   
-    res.cookie("sessionId", "youPassedTheLab")
-    res.json(queryResult)
+  let string = `<u>Your results for <em>"${query}"</em></u>:<br>`
+  for (let entry of queryResult)
+    string += `${entry.sentence}<br>`
+  
+  res.cookie("sessionId", "youPassedTheLab")
+  res.json(string)
 })
 
 server.listen(PORT, "127.0.0.1", () => console.log(`Server is listening on port ${PORT}`))
