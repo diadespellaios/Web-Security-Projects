@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XSS Lab 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <h1>XSS Lab 3</h1>
+    
+    <main>
+      <div class="container">
+        <h2><em>Create a post!</em></h2>
+
+        <label for="post-content">What's on your mind?</label>
+        <textarea id="post-content" name="post-content" placeholder="Giannelis for Omonoia mayor" required></textarea>
+
+        <label for="post-author">Username</label>
+        <input id="post-author" name="post-author" type="text" placeholder="Joe Rogan" required>
+        <button id="submit">Share</button>
+      </div>
+      <div id="posts"></div>
+    </main>
+  </body>
+</html>

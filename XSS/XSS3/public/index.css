@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Datatype", sans-serif;
+  background-color: #ffd900;
+  color: #A31313;/*
+  display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+
+h1 {
+  margin: 5vh;
+  font-size: 8vw;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 6vh;
+  padding: 2% 4%;
+  font-size: 4.5vw;
+  border: 2px solid #A31313;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+label {
+  font-size: 1.1em;
+}
+
+input, textarea {
+  width: 30vw;
+  padding: 0.2em 0.4em;
+  margin: 0.5em;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 12vh;
+}
+
+button {
+  font-size: 1.4em;
+  background-color: #FF7A00;
+  color: #0F0F0F;
+  padding: 0.3em 0.6em;
+  margin-top: 0.8em;
+  border: 0.15em solid #0F0F0F; 
+}
+
+button:hover {
+  background-color: #F06F00;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #D96200;
+}
+
+#posts {
+  margin: 2.2em;
+  padding: 0.3em;
+  border: 1px solid #0F0F0F;
+  display: none;
+}
+
+.post {
+  margin: 6% 3%;
+}
+
+.author {
+  color: #0F0F0F;
+}
+
+.content {
+  font-size: 1.2em;
+}
