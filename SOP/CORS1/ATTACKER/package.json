@@ -1,0 +1,17 @@
+{
+  "name": "attacker",
+  "version": "1.0.0",
+  "description": "The attacker server",
+  "license": "ISC",
+  "author": "Diades Pellaios",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1"
+  }
+}
