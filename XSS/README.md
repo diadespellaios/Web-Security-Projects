@@ -1,0 +1,1 @@
+Cross-Site Scripting or XSS is a web vulnerability that allows an attacker to execute code (javascript) from the victim's browser context. It takes advantage of the trust relationship between the victim user and the web application.
